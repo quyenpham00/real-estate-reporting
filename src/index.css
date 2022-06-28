@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Nunito', sans-serif;
+}
+
+:root {
+  --clr-primary-1: #90c2f3;
+  --clr-primary-2: #e9f3fd;
+  --clr-primary-3: #eaa4ed;
+  --clr-primary-4: #f1d07f;
+  --clr-primary-5: #caacf4;
+  --clr-primary-6: #95f8c1;
+  --clr-primary-7: #6c63fe;
+  --clr-primary-8: #fdbc94;
+  --clr-primary-9: #ffeade;
+  --clr-primary-10: #ff967c;
+  --clr-grey-1: #455392;
+  --clr-grey-2: #1b85e8;
+  --clr-grey-3: #1f2d48;
+  --clr-grey-4: #d1e8f6;
+  --clr-grey-5: #fd94a1;
+  --clr-grey-6: #94a1fd;
+  --clr-grey-7: #fee9ec;
+  --clr-grey-8: #94d5fd;
+  --clr-grey-9: #dae2ec;
+  --clr-grey-10: #f1f5f8;
+  --clr-white: #fff;
+  --clr-red-dark: #bb2525;
+  --clr-red-light: #e66b6b;
+  --clr-green-dark: #25bb32;
+  --clr-green-light: #6be675;
+  --clr-black: #222;
+  --transition: all 0.3s linear;
+  --spacing: 0.1rem;
+  --radius: 1rem;
+  --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  --max-width: 1170px;
+  --fixed-width: 620px;
+}
+
+.white-background {
+  background-color: #fff;
+  border-radius: var(--radius);
+  box-shadow: var(--light-shadow);
+}
+
+.custom-btn {
+  background-color: #ebebeb;
+  border: none;
+  border-radius: 50px;
+  color: black;
+}
+.custom-btn:hover {
+  background-color: var(--clr-primary-10);
+}
+.custom-btn:focus {
+  background-color: var(--clr-primary-10);
+}
+.selector-btn {
+  font-weight: bold;
+  color: #fff;
+  background-color: var(--clr-primary-10);
+}
+.custom-position-absolute {
+  right: 20px;
+  bottom: 5px;
+}
+
+body {
+  background-color: #f9f9f9 !important;
+}
+.navbar-position {
+  position: fixed !important;
+  top: 0;
+  right: 0;
+  left: 0;
+  box-shadow: var(--light-shadow);
+  background-color: #fff;
+  z-index: 1;
+}
+.active {
+  background-color: var(--clr-primary-10) !important;
+  color: #fff !important;
+  border-radius: 0.5rem !important;
+}
+
+.sidebar-container {
+  position: fixed !important;
+  background-color: #fff;
+  left: 0;
+  /* bottom: 0; */
+  top: 66.5px;
+  z-index: 1;
+  height: 2560px;
+  box-shadow: var(--light-shadow);
+}
+
+.main-container {
+  margin-top: 100px;
+  margin-left: 280px;
+  margin-right: 30px;
+}
+
+.navbar-brand {
+  font-weight: 800;
+  color: var(--clr-primary-10);
+  font-size: 26px !important;
+}
+
+.nav-link {
+  font-weight: bold;
+  font-size: 20px !important;
+}
+.nav-link:hover {
+  color: #fff !important;
+}
+.nav-item {
+  border-radius: 0.5rem !important;
+  margin: 15px 0;
+}
+.nav-item:hover {
+  background-color: var(--clr-primary-10);
+}
+.icon {
+  margin-right: 15px;
+  margin-bottom: 5px;
+}
+
+.banner-container {
+  border-radius: 1rem;
+  background-color: #fff !important;
+  box-shadow: var(--light-shadow);
+}
+.banner-img > img {
+  width: 550px;
+}
+.banner-highlight {
+  background-color: var(--clr-primary-8);
+  width: fit-content;
+  padding-left: 10px;
+  padding-right: 10px;
+  color: #fff;
+}
+.banner-text {
+  font-weight: bold;
+  text-align: justify;
+}
+.banner-text {
+  margin-top: 70px;
+  margin-left: 70px;
+}
+
+.card-details {
+  border-radius: 25rem;
+  margin-bottom: 15px;
+  padding: 10px;
+  box-shadow: var(--dark-shadow);
+  text-align: center;
+}
+.card-details p {
+  margin: 0px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.btn-login {
+  background-color: var(--clr-primary-10) !important;
+  border-radius: 25rem;
+  font-weight: bold;
+  color: #fff;
+}
+.table-container {
+  background-color: #fff;
+  text-align: center;
+  height: 100%;
+  border-radius: var(--radius);
+  padding: 20px 0px;
+}
+
+.orange-background {
+  background-color: var(--clr-primary-9);
+  border-radius: var(--radius);
+  box-shadow: var(--light-shadow);
+}
+
+tr:nth-child(even) {
+  background: var(--clr-primary-2);
+}
+.table-container th,
+.table-container .title {
+  color: var(--clr-grey-1) !important;
+}
+
+.quantity-table-container tr:nth-child(even) {
+  background: var(--clr-grey-7);
+}
+
+.quantity-table-container {
+  background-color: #fff;
+  text-align: center;
+  height: 100%;
+  border-radius: var(--radius);
+  padding: 20px;
+}
+
+.quantity-table-container th,
+.quantity-table-container .title {
+  color: var(--clr-red-light) !important;
+}
