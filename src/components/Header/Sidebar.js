@@ -9,7 +9,7 @@ import {
 export default function Sidebar() {
   return (
     <div
-      className='d-flex flex-column flex-shrink-0 p-3 sidebar-container'
+      className='d-flex flex-column flex-shrink-0 p-3 sidebar-container d-md-block'
       style={{ width: '250px' }}
     >
       <ul className='nav nav-pills flex-column mb-auto'>

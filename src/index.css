@@ -96,7 +96,7 @@ body {
   /* bottom: 0; */
   top: 66.5px;
   z-index: 1;
-  height: 2560px;
+  bottom: 0;
   box-shadow: var(--light-shadow);
 }
 
@@ -105,7 +105,11 @@ body {
   margin-left: 280px;
   margin-right: 30px;
 }
-
+@media (min-width: 768px) {
+  .main-container {
+    margin-left: 30px;
+  }
+}
 .navbar-brand {
   font-weight: 800;
   color: var(--clr-primary-10);
@@ -135,9 +139,10 @@ body {
   border-radius: 1rem;
   background-color: #fff !important;
   box-shadow: var(--light-shadow);
+  margin-top: 100px !important;
 }
 .banner-img > img {
-  width: 550px;
+  width: 600px;
 }
 .banner-highlight {
   background-color: var(--clr-primary-8);

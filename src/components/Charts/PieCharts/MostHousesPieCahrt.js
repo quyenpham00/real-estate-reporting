@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import HighchartsReact from 'highcharts-react-official'
 import Highcharts from 'highcharts'
-import { Row, Col } from 'react-bootstrap'
+
 
 const generateOptions = (data, houseTypesReport) => {
   data.sort((a, b) => b.count - a.count)

@@ -10,9 +10,8 @@ export default function Banner() {
             <h1>Flyhome</h1>
           </div>
           <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores
-            iusto magni aspernatur libero impedit quas odit sapiente dolorem
-            reiciendis eveniet, aperiam reprehenderit ducimus
+            Let's invest in your way. Come to us to experience the most
+            scientific and wonderful visual data.
           </p>
         </div>
       </div>

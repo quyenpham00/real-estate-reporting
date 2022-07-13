@@ -34,8 +34,6 @@ export default function Summary() {
   useEffect(() => {
     getHouseByDate(selectedTime).then((res) => {
       setHouseReport(res)
-      console.log(selectedTime)
-      console.log(res)
     })
   }, [selectedTime])
 
@@ -81,7 +79,7 @@ export default function Summary() {
         <Col md={8}>
           <MostPriceTable data={countriesReport}></MostPriceTable>
         </Col>
-        <Col md={4}>
+        <Col md={4} className='pe-0'>
           <MostQuantity data={countriesReport}></MostQuantity>
         </Col>
       </Row>

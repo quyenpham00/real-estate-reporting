@@ -30,6 +30,7 @@ export default function NavbarCustom() {
             <a className='btn btn-dark px-3 me-5' role='button'>
               <FaGithubAlt></FaGithubAlt>
             </a>
+            
           </div>
         </div>
       </div>
